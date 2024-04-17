@@ -19,12 +19,11 @@ function atualizaLinha(){
     
     
     if(nomes.includes(inputNome.value) || numeros.includes(Number(inputNumero.value) || numero.value.length<=7)){
-        alert(`o nome ${inputNome.value} ou o numero ${inputNumero.value} ja foram digitados ou o número digitado é invalido.`)
-        return false
+        alert(`o nome ${inputNome.value} ou o numero ${inputNumero.value} ja foram digitados.`)
+        
     } else {
         nomes.push(inputNome.value)
         numeros.push(Number(inputNumero.value))
-        return true
 
         let linha= '<tr>'
         linha += `<td> ${inputNome.value}</td>`

@@ -62,6 +62,7 @@ nav{
     body{
         overflow-x: hidden;
     }
+    
     .nav-list {
         position: absolute;
         top: 10vh;
@@ -112,15 +113,16 @@ nav{
 
 /*corpo*/
 
-section#fomulario form#form {
-    display: flex;
+section#fomulario{
+    position: relative;
     font-weight: bolder;
-    max-width: 740px;
-    width: 100%;
-    justify-content: space-between;
-    background: rgb(255, 255, 255);
+    width: 50vw;
+    height: 7vh;
+    background: rgba(255, 255, 255, 0.833);
     padding: 10px;
     margin: auto;
+    min-width: 700px;
+    top: 10vh;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
     
 }
@@ -155,10 +157,13 @@ section button:hover {
 
 /*tabela*/
 section#tabela {
+    position: relative;
+    top: 20vh;
     background: white;
     padding: 10px;
-    width: 740px;
+    width: 50vw;
     margin: auto;
+    min-width: 700px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
 }
 
@@ -200,7 +205,9 @@ section table td{
 }
 
 footer {
-    color: white;
+    position: relative;
+    top: 30vh;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-style: italic;
 }
